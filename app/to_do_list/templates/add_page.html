@@ -10,7 +10,7 @@
 <div class="container">
     <h1>Add To Do</h1>
     <div class="form">
-        <form action="/" method="post">
+        <form action="{% url 'to_do_add' %}" method="post">
             {% csrf_token %}
             <div class="form_row">
                 <input placeholder="Заголовок" maxlength="200" type="text" name="title">
