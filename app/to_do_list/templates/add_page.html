@@ -13,10 +13,10 @@
         <form action="/" method="post">
             {% csrf_token %}
             <div class="form_row">
-                <span>Заголовок - </span><input required type="text" name="title">
+                <input placeholder="Заголовок" maxlength="200" type="text" name="title">
             </div>
-            <div class="form_row">
-                <span>Описание - </span><input class="description" name="description" type="text">
+            <div class="form_row description">
+                <textarea placeholder="Описание" maxlength="1000" rows="5" cols="24" name="description"></textarea>
             </div>
             <div class="form_row">
                 <span>Статус - </span>
