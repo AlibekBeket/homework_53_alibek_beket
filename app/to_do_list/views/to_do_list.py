@@ -8,10 +8,14 @@ from to_do_list.models import ToDo
 
 def home_view(request: WSGIRequest):
     if request.POST:
+        if request.POST.get('date') == "":
+            date = None
+        else:
+            date = request.POST.get('date')
         to_do_add = {
             'description': request.POST.get('description'),
             'status': request.POST.get('status'),
-            'date': request.POST.get('date'),
+            'date': date,
             'title': request.POST.get('title')
         }
         ToDo.objects.create(**to_do_add)
@@ -28,4 +32,6 @@ def add_view(request: WSGIRequest):
 
 def detail_view(request, pk):
     to_do = get_object_or_404(ToDo, pk=pk)
+    if to_do.date == None:
+        to_do.date = ''
     return render(request, 'to_do_page.html', context={'to_do': to_do})

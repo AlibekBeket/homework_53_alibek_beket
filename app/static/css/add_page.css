@@ -17,3 +17,6 @@ body{
 .form_row input{
     width: 200px;
 }
+.description{
+    height: 150px;
+}
