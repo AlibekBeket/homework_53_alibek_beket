@@ -1,0 +1,19 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    background-color: LightGrey;
+}
+body{
+    max-width: 1000px;
+    margin-top: 50px;
+}
+.form{
+    font-size: 20px;
+    margin-top: 50px;
+}
+.form_row{
+    margin-top: 20px;
+}
+.form_row input{
+    width: 200px;
+}

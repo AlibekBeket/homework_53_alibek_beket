@@ -1,0 +1,21 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-size: 25px;
+    background-color: LightGrey;
+}
+body{
+    text-align: left;
+    max-width: 1000px;
+    margin-top: 50px;
+}
+.to_do_row{
+    margin-top: 10px;
+    border-bottom: 2px solid black;
+}
+.add_link_block{
+    margin-top: 50px;
+}
+.add_link{
+    color: black;
+}

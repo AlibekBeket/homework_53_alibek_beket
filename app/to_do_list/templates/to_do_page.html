@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/home_page.css' %}">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <h1>To-Do</h1>
+    <h2 class="to_do_row">{{ to_do.description }}<br>Status: {{ to_do.status }} - {{ to_do.created_at }}</h2>
+    <div class="add_link_block">
+        <a class="add_link" href="/">Return Home Page</a>
+    </div>
+</div>
+</body>
+</html>

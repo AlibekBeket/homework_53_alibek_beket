@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/home_page.css' %}">
+    <title>To-Do List</title>
+</head>
+<body>
+<div class="container">
+    <h1>To-Do List</h1>
+    {% for to_do in to_do_list %}
+    <h2 class="to_do_row">{{ to_do.description }}<br>Status: {{ to_do.status }}<br><a href="/to_do/{{ to_do.pk }}">Подробнее</a></h2>
+    {% endfor %}
+    <div class="add_link_block">
+        <a class="add_link" href="/to_do/add">Add To Do</a>
+    </div>
+</div>
+</body>
+</html>

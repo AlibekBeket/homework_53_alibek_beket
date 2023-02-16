@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/add_page.css' %}">
+    <title>Add To Do</title>
+</head>
+<body>
+<div class="container">
+    <h1>Add To Do</h1>
+    <div class="form">
+        <form action="/" method="post">
+            {% csrf_token %}
+            <div class="form_row">
+                <span>Описание - </span><input type="text" name="description">
+            </div>
+            <div class="form_row">
+                <span>Статус - </span>
+                <select name="status" placeholder="Статус">
+                    <option value="new">Новый</option>
+                    <option value="in progress">В процессе</option>
+                    <option value="made">Сделано</option>
+                </select>
+            </div>
+            <div class="form_row">
+                <input type="date" name="date" min="2000-01-01" max="2023-02-18">
+            </div>
+            <div class="form_row">
+                <input type="submit" value="Подтвердить">
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+[
+{
+  "model": "to_do_list.todo",
+  "pk": 2,
+  "fields": {
+    "description": "1asdf",
+    "status": "new",
+    "created_at": null
+  }
+},
+{
+  "model": "to_do_list.todo",
+  "pk": 3,
+  "fields": {
+    "description": "Homewroo",
+    "status": "in progress",
+    "created_at": null
+  }
+},
+{
+  "model": "to_do_list.todo",
+  "pk": 4,
+  "fields": {
+    "description": "hello",
+    "status": "new",
+    "created_at": null
+  }
+},
+{
+  "model": "to_do_list.todo",
+  "pk": 5,
+  "fields": {
+    "description": "Classwork",
+    "status": "in progress",
+    "created_at": "2023-02-03"
+  }
+}
+]
