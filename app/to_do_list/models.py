@@ -8,10 +8,11 @@ class ToDo(models.Model):
         ('in progress', 'В процессе'),
         ('made', 'Сделано')
     ]
-    description = models.TextField(max_length=1000, null=False, blank=False, verbose_name="Описание")
+    title = models.TextField(max_length=200, null=False, blank=False, verbose_name="Заголовок")
+    description = models.TextField(max_length=1000, null=True, blank=True, verbose_name="Описание")
     status = models.CharField(max_length=40, null=False, blank=False, verbose_name='Статус', choices=choices,
                               default='new')
-    created_at = models.DateField(verbose_name='Дата выполнения', blank=True, null=True)
+    date = models.DateField(verbose_name='Дата выполнения', blank=True, null=True)
 
     def __str__(self):
         return f"{self.description} - {self.status}"

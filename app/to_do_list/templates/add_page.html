@@ -13,6 +13,9 @@
         <form action="/" method="post">
             {% csrf_token %}
             <div class="form_row">
+                <span>Заголовок - </span><input type="text" name="title">
+            </div>
+            <div class="form_row">
                 <span>Описание - </span><input type="text" name="description">
             </div>
             <div class="form_row">

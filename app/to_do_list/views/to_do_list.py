@@ -11,7 +11,8 @@ def home_view(request: WSGIRequest):
         to_do_add = {
             'description': request.POST.get('description'),
             'status': request.POST.get('status'),
-            'created_at': request.POST.get('date')
+            'date': request.POST.get('date'),
+            'title': request.POST.get('title')
         }
         ToDo.objects.create(**to_do_add)
     to_do_list = ToDo.objects.all()
