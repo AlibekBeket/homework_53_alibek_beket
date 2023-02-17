@@ -31,6 +31,14 @@ def add_view(request: WSGIRequest):
 
 def detail_view(request, pk):
     to_do = get_object_or_404(ToDo, pk=pk)
+    to_do_class = ToDo()
+    to_do_status = to_do_class.choices
+    for status in to_do_status:
+        if status[0] == to_do.status:
+            to_do.status = status[1]
     if to_do.date == None:
         to_do.date = ''
-    return render(request, 'to_do_page.html', context={'to_do': to_do})
+    return render(request, 'to_do_page.html', context={
+        'to_do': to_do,
+        'to_do_status': to_do_status
+    })
