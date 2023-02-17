@@ -7,12 +7,21 @@
     <title>Title</title>
 </head>
 <body>
-<div class="container">
-    <h1>To-Do</h1>
-    <h2 class="to_do_row">{{ to_do.title }}<br>{{ to_do.description }}<br>Status: {{ to_do.status }} {{ to_do.date }}</h2>
-    <div class="add_link_block">
-        <a class="add_link" href="{% url 'to_do_list' %}">Return Home Page</a>
+<nav class="navbar">
+    <div class="container">
+        <ul class="menu">
+            <li>
+                <a href="{% url 'to_do_list' %}">To Do List</a>
+            </li>
+            <li>
+                <a href="{% url 'to_do_add' %}">Add To Do</a>
+            </li>
+        </ul>
     </div>
+</nav>
+<div class="container">
+    <h1>{{ to_do.title }}</h1>
+    <h2 class="to_do_row">{{ to_do.description }}<br>Status: {{ to_do.status }} {{ to_do.date }}</h2>
 </div>
 </body>
 </html>
