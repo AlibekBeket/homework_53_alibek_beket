@@ -54,3 +54,31 @@ h1{
 .endblock{
     height: 50px;
 }
+.form{
+    font-size: 20px;
+    margin-top: 50px;
+}
+.form_row{
+    margin-top: 20px;
+}
+.form_row input{
+    width: 200px;
+    color: DarkRed;
+}
+.form_row select{
+    width: 200px;
+    color: DarkRed;
+}
+.form_row option{
+    width: 200px;
+    color: DarkRed;
+}
+.description{
+    height: 150px;
+}
+.description textarea{
+    color: DarkRed;
+}
+.endblock{
+    height: 50px;
+}
