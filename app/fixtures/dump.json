@@ -1,0 +1,102 @@
+[
+{
+  "model": "to_do_list.todo",
+  "pk": 9,
+  "fields": {
+    "title": "Homework 52",
+    "description": "Hello world",
+    "status": "new",
+    "date": null
+  }
+},
+{
+  "model": "to_do_list.todo",
+  "pk": 10,
+  "fields": {
+    "title": "Classwork_50",
+    "description": "Tesla",
+    "status": "made",
+    "date": "2023-02-03"
+  }
+},
+{
+  "model": "to_do_list.todo",
+  "pk": 11,
+  "fields": {
+    "title": "sleep",
+    "description": "22:00\r\nturn off light\r\n\"Sam\" \"aaa",
+    "status": "new",
+    "date": null
+  }
+},
+{
+  "model": "to_do_list.todo",
+  "pk": 12,
+  "fields": {
+    "title": "Hello",
+    "description": "",
+    "status": "new",
+    "date": null
+  }
+},
+{
+  "model": "to_do_list.todo",
+  "pk": 13,
+  "fields": {
+    "title": "party",
+    "description": "",
+    "status": "in progress",
+    "date": "2023-02-15"
+  }
+},
+{
+  "model": "to_do_list.todo",
+  "pk": 16,
+  "fields": {
+    "title": "Hello",
+    "description": "asdfsagda",
+    "status": "in progress",
+    "date": null
+  }
+},
+{
+  "model": "to_do_list.todo",
+  "pk": 17,
+  "fields": {
+    "title": "Hello",
+    "description": "asfhsgfdh",
+    "status": "in progress",
+    "date": null
+  }
+},
+{
+  "model": "to_do_list.todo",
+  "pk": 18,
+  "fields": {
+    "title": "first",
+    "description": "second",
+    "status": "new",
+    "date": null
+  }
+},
+{
+  "model": "to_do_list.todo",
+  "pk": 19,
+  "fields": {
+    "title": "main",
+    "description": "",
+    "status": "new",
+    "date": null
+  }
+},
+{
+  "model": "to_do_list.todo",
+  "pk": 20,
+  "fields": {
+    "title": "Mine",
+    "description": "milk",
+    "status": "made",
+    "date": "2023-02-20"
+  }
+}
+]
